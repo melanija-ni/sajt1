@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="alternate" href="http://www.imesajta.com/latinicna-strana" hreflang="sr-Latn-rs" />
+        <link rel="alternate" href="http://www.imesajta.com/ћирилична-страна" hreflang="sr-Cyrl-rs" />
+        <link rel="canonical" href="http://www.imesajta.com/latinicna-strana">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@569&family=Itim&family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="widht=devise-width, initial-scale=1.0">
+        <link rel="icon" type="image" href="../SLIKE/logo.png"  width="80px" height="50px">
+        <title>PREDSOBLJA</title>
+        <link rel="stylesheet" href="Predsoblja.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@569&family=Itim&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="../SLIKE/logo.png" width="80px" height="50px" class="logo">
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="index.html">O nama</a> </li>
+                        <li><a href="Galerija.html">Galerija</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <img src="../SLIKE/menu-logo.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="Uvod">
+                <h1>Predsoblja po meri</h1>
+                
+                <p>Predsoblje je bitan deo svakog stana.<br>
+                    Osim što estetski upotpunjuje prostoriju, takođe joj daje i funkcionalnost. Mi smo tu da Vam predložimo rešenje.</p>
+            </div>
+             
+             <div class="proizvodi">
+               <h1>Galerija slika</h1>
+             </div>
+            <div class="slike">
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje1.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje1.jpg" >
+                </div>
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje2.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje2.jpg" >
+                </div>
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje3.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje3.jpg" >
+                </div>
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje4.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje4.jpg" >
+                </div>
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje5.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje5.jpg" >
+                </div>
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje6.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje6.jpg" >
+                </div>
+                <div class="gallery-item">
+                <img class="zoom-in"src="../SLIKE/Predsoblja/Predsoblje7.jpg" >
+                <img class="zoom"src="../SLIKE/Predsoblja/Predsoblje7.jpg" >
+                 </div>
+            </div>
+            <div class="razrada">
+                <h2>Naši projekti</h2>
+                <div class="holder">
+                    <div class="img-item">
+                        <img src="../SLIKE/naslovna/Kuhinja17.jpg" alt="Kuhinje">
+                        <a href="Kuhinje.html">Kuhinje</a>
+                    </div>
+                    <div class="img-item">
+                        <img src="../SLIKE/naslovna/Garderoberi 4.jpg" alt="Garderoberi">
+                        <a href="Garderoberi.html">Garderoberi</a>
+                    </div>
+                    <div class="img-item">
+                        <img src="..//SLIKE/naslovna/Predsoblje3.jpg" alt="Predsoblja">
+                        <a href="Predsoblja.html">Predsoblja</a>
+                    </div>
+                    <div class="img-item">
+                        <img src="../SLIKE/naslovna/Police 1.jpg" alt="Police">
+                        <a href="Police.html">Police</a>
+                    </div>
+                    <div class="img-item">
+                        <img src="../SLIKE/naslovna/sto4.jpg" alt="Stolovi">
+                        <a href="Stolovi.html">Stolovi</a>
+                    </div>
+                    <div class="img-item">
+                        <img id= "pp" src="../SLIKE/poslovni prostor/p2.jpg" alt="poslovni prostor">
+                        <a href="poslovni-prostor.html">Poslovni prostor</a>
+                    </div>
+                </div>
+                
+            </div>
+
+                <div class="Kontakt">
+                <h1>KONTAKTIRAJTE NAS</h1>
+                <h2>060/3229320</h2>
+                <h3>melmark.namestaj@gmail.com</h3>
+                <div class="social-links1">
+                    <a href="https://www.facebook.com/Melmark.namestaj"><img src="../SLIKE/icons8-facebook-40.png"></a>
+                    <a href="https://www.instagram.com/melmark_namestaj"> <img src="../SLIKE/icons8-instagram-48.png"></a>
+                </div>
+                </div>
+        </div>
+
+        <script> 
+
+            var menulist = document.getElementById("menulist");
+
+            menulist.style.maxHeight ="0px";
+
+            function togglemenu() {
+
+                if(menulist.style.maxHeight =="0px")
+                {
+                    menulist.style.maxHeight ="130px"
+                }
+                else{
+                    menulist.style.maxHeight ="0px"
+                }
+            }
+
+
+        </script>
+    </body>
+    
+</html>

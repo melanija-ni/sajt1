@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="alternate" href="http://www.imesajta.com/latinicna-strana" hreflang="sr-Latn-rs" />
+        <link rel="alternate" href="http://www.imesajta.com/ћирилична-страна" hreflang="sr-Cyrl-rs" />
+        <link rel="canonical" href="http://www.imesajta.com/latinicna-strana">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@569&family=Itim&family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="widht=devise-width, initial-scale=1.0">
+        <link rel="icon" type="image" href="../SLIKE/logo.png"  width="80px" height="50px">
+        <title>KONTAKT</title>
+        <link rel="stylesheet" href="Kontakt.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@569&family=Itim&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="../SLIKE/logo.png" width="80px" height="50px" class="logo">
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="index.html">O nama</a> </li>
+                        <li><a href="Galerija.html">Galerija</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <img src="../SLIKE/menu-logo.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="containe">
+                <div class="contact-box">
+                    <div class="left">Ukoliko imate nekih pitanja ili sugestiju možete nas kontaktirati<br>telefonom, putem mejla ili popuniti kontakt formu.</div>
+                    <div class="right">
+                        <h2>Kontakt forma</h2>
+                        <form action="https://formspree.io/f/mwkyqgpa" method="POST">
+                        <input name="Ime" type="text" class="field" placeholder="Ime"required>
+                        <input name="Email" type="email" class="field" placeholder="Email adresa" required>
+                        <input name="Phone" type="text" class="field" placeholder="Telefon">
+                        <textarea name="field area " class="field area" placeholder="Poruka"required></textarea>
+                        <button class="btn">Pošalji</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="kontakt1">
+            
+            <div class="Kontakt">
+                <h1>KONTAKTIRAJTE NAS</h1>
+                <h2>060/3229320</h2>
+                <h3>melmark.namestaj@gmail.com</h3>
+                <div class="social-links1">
+                    <a href="https://www.facebook.com/Melmark.namestaj"><img src="../SLIKE/icons8-facebook-40.png"></a>
+                    <a href="https://www.instagram.com/melmark_namestaj"> <img src="../SLIKE/icons8-instagram-48.png"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+            <script>
+
+                var menulist = document.getElementById("menulist");
+    
+                menulist.style.maxHeight ="0px";
+    
+                function togglemenu() {
+    
+                    if(menulist.style.maxHeight =="0px")
+                    {
+                        menulist.style.maxHeight ="130px"
+                    }
+                    else{
+                        menulist.style.maxHeight ="0px"
+                    }
+                }
+    
+    
+            </script>
+        </div>
+    </body>
+</html>

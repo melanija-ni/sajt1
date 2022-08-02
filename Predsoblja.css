@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Kanit', sans-serif;
+    box-sizing:border-box;
+    
+    
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    padding-left:8%;
+    padding-right:8%;
+    overflow:hidden;
+    
+}
+.navbar{
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    width:50px;
+    cursor:pointer;
+    margin:30px 0;
+}
+.menu-icon{
+    width:25px;
+    cursor:pointer;
+    display: none;
+}
+nav{
+    flex:1;
+    text-align:right;
+    
+}
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin-right:30px;
+    
+}
+nav ul li a{
+    text-decoration:none;
+    color:rgba(70, 69, 68, 0.986);
+    font-size:20px;
+    font-weight: bolder;
+
+}
+nav ul li a:hover{
+    color:rgba(8, 8, 8, 0.986);
+}
+@media only screen and (max-width:700px){
+    nav ul{
+        width:100%;
+        position:absolute;
+        top:75px;
+        right:0;
+        z-index: 2;
+    }
+    nav ul li{
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+        color:rgba(41, 40, 39, 0.986);
+    }
+    nav ul li a:hover{
+        background-color: rgb(161, 156, 153);
+    }
+    .menu-icon {
+        display:block;
+    }
+    #menulist {
+        overflow: hidden;
+        transition:0.5s;
+
+    }
+    
+}
+.Uvod{
+    background-image: url(../SLIKE/Predsoblja/Predsoblje3.jpg);
+    background-size: 100%;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+    margin:0;
+    
+    }
+    
+.Uvod h1{
+    text-align: center;
+    color:rgb(196, 121, 10);
+    font-weight: bolder;
+    margin:20px;
+    padding:10px;
+    font-size: 30px;
+    
+}
+.proizvodi{
+    
+    font-size: 20px;
+    color:rgba(70, 69, 68, 0.986);
+    background-color: rgba(189, 164, 112, 0.767);
+    padding:2px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+.proizvodi h1{
+    margin:10x;
+    font-size: 30px;
+}
+.Uvod p{
+    
+    font-size: 20px;
+    color:rgba(70, 69, 68, 0.986);
+    background-color: rgba(189, 164, 112, 0.767);
+    margin:10px;
+    padding:20px;
+    font-weight: bolder;
+}
+
+
+.Kontakt{
+    margin:20px 0px;
+    padding:20px;
+    color:rgba(70, 69, 68, 0.986);
+    background-color: rgba(189, 164, 112, 0.767);
+    text-align: center;
+    
+}
+.Kontakt h1{
+    padding:30px;
+    
+    
+}
+.social-links1 img{
+    height:40px;
+    cursor:pointer;
+    margin:10px;
+}
+@media only screen and (max-width:800px){
+    .img-item{
+        padding: 0 2rem;
+    }
+    .slike-1{
+        margin: -30px;
+    }
+    
+    .zoom-in:hover + .zoom{
+        width:300px;
+        height: 250px;
+       
+    }
+    .Kontakt{
+        margin-top:20px;
+    }
+    
+}
+/*galerija*/
+.holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    max-width: 1000px;
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+.img-item{
+    position: relative;
+    height: 200px;
+}
+.img-item a { 
+    position: absolute;
+    top: 160px;
+    left:120px;
+    transform: translate(-30%, -30%);
+    padding: 0.6rem 1rem;
+    background-color: rgba(189, 164, 112, 0.767);
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Itim', cursive;
+}
+.img-item a:hover {
+    background-color:rgba(70, 69, 68, 0.986);
+}
+.img-item img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border:2px solid #cccace;
+    padding:5px;
+    cursor: pointer;
+
+}
+
+.razrada h2{
+    padding:5px;
+    margin:40px 0px 20px 0px;
+    text-align: center;
+    background-color: rgba(189, 164, 112, 0.767);
+    color:rgba(70, 69, 68, 0.986);
+    
+}
+/*zoom*/
+.zoom-in{
+    width:300px;
+    height: 250px;
+    cursor: pointer;
+    
+}
+.zoom{
+    position:absolute;
+    width: 0px;
+   
+}
+.zoom-in:hover + .zoom {
+    width:500px;
+    height:400px;
+    margin:100px -50px -50px -400px;
+    padding:-100px;
+} 
+/*galerija1*/
+
+.slike{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    max-width: 1000px;
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+.gallery-item{
+    position: relative;
+    height: 200px;
+}
+.gallery-item img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border:2px solid #cccace;
+    padding:5px;
+    cursor: pointer;
+
+}
